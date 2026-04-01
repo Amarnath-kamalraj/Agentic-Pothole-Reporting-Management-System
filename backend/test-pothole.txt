@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+from PIL import Image, ImageDraw
+img = Image.new('RGB', (400, 300), color='gray')
+d = ImageDraw.Draw(img)
+d.rectangle([100, 100, 300, 200], fill='black')
+img.save('test-pothole.jpg')
